@@ -1,6 +1,7 @@
 ## A study on B tree file stucture
 
 ### Brief about the Project
+Menu-driven application for student courses where user is able to perform operations like adding a course, searching for a courses or deleting a course.
 
 ### A little information about File Structures
 A **file** is a named collection of related information that is recorded on secondary storage such as magnetic disks, magnetic tapes and optical disks. **File Structure** is a way of organizing files in such a way that inserting and retrieving of record is done efficiently.
@@ -11,28 +12,32 @@ There are different mechanisms for accessing records from files. **Indexed-seque
 #### Storing records into file
 Among the different techniques of storing the records into the files, **variable-length records with delimiters** are most efficiently when used along with index-based accessing. The record-delimiter used to seperate records is hash symbol(#) and the seperator for fields in each record is pipeline symbol(|).
 
-### Different File Structures
-#### other FS
-#### Tree-based FS
-#### one line leading to btree
+#### Tree File Structures
+A tree structure is the most common directory structure. The tree has a **root** directory, and every file in the system have a unique path.
+This generalization allows the user to create there own subdirectories and to organize on their files accordingly.
+![Tree structure](https://media.geeksforgeeks.org/wp-content/uploads/222-3-1.png)
 
-### B tree
-#### defn
-#### advantages
-#### better trees than Btree
+##### BINARY SEARCH TREE
+In computer science, a binary search tree (BST), also called an ordered or sorted binary tree, is a rooted binary tree whose internal nodes each store a key greater than all the keys in the node's left subtree and less than those in its right subtree.
+
+Problems in BST arises when the node inserting into the tree are always greater/lesser than the root node and child nodes. In this case, we get a skewed tree which is not ideal for accessing and inserting.
+
+##### SELF- BALANCING BINARY SEARCH TREES
+We can solve this problem using self-balancing trees. In computer science, a self-balancing binary search tree is any node-based binary search tree that automatically keeps its height small in the face of arbitrary item insertions and deletions.
+
+**B-Tree** is a self-balancing search tree. The main idea is to reduce the number of disk accesses. Most of the tree operations like searching, inserting, deleting require O(h) disk accesses where h is the height of the tree. B-tree is a wide rather than a tall tree. The height of B-Trees is kept low by putting maximum possible keys in a B-Tree node. Since the height of the B-tree is low so efficiency of the operations are significantly higher compared to other balanced BST like AVL Tree, Red-Black Tree, ..etc.
 
 ### Sequence set
 
 ### Header files used in the program
-#### include<graphics.h>
-#### include <fstream.h>
-#### include <conio.h>
-#### include<iostream.h>
-#### include <string.h>
-#### include <stdlib.h>
-#### include<dos.h>
-#### include<stdio.h>
-#### include<ctype.h>
+include<graphics.h> - provides access to a simple graphics library that makes it possible to draw lines, polygons, images, and strings on a graphical window.
+include <fstream.h> - input/output stream class to operate on files.
+include <conio.h> - declares several useful library functions for performing "console input and output" from a program.
+include<iostream.h> - defines the standard input/output stream objects
+include <string.h> - set of functions implementing operations on strings in its standard library.
+include <stdlib.h> - defines four variable types, several macros, and various functions for performing general functions.
+include<dos.h> - contains functions for handling interrupts, producing sound, date and time functions etc.
+include<ctype.h> - several functions that are useful for testing and mapping characters. 
 
 ### Modules of the program
 diagram of all modules
@@ -60,3 +65,4 @@ diagram
 * [Understanding Record Size and Record Delimiters](http://www.3480-3590-data-conversion.com/article-record-size.html#:~:text=A%20%22record%20delimiter%22%20is%20a,be%20able%20to%20separate%20records.)
 * [B-Tree Tutorial - An Introduction to B-Trees](https://youtu.be/C_q5ccN84C8)
 * [B-Tree: Another Implementation By Java](https://www.codeproject.com/Articles/1158559/B-Tree-Another-Implementation-By-Java)
+* Wikipedia [donate](https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=IN&uselang=en&utm_medium=sidebar&utm_source=donate&utm_campaign=C13_en.wikipedia.org)

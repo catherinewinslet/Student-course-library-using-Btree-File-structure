@@ -1,9 +1,8 @@
 ## A study on B tree file stucture
 
-### Brief about the Project
-Menu-driven application for student courses where user is able to perform operations like adding a course, searching for a courses or deleting a course.
+The project is a menu-driven application for student courses database where the user is able to perform operations like adding a course, searching for a courses or deleting a course, etc.
 
-### A little information about File Structures
+### Brief about File Structures
 A **file** is a named collection of related information that is recorded on secondary storage such as magnetic disks, magnetic tapes and optical disks. **File Structure** is a way of organizing files in such a way that inserting and retrieving of record is done efficiently.
 
 #### Accessing records from file
@@ -27,24 +26,18 @@ We can solve this problem using self-balancing trees. In computer science, a sel
 
 **B-Tree** is a self-balancing search tree. The main idea is to reduce the number of disk accesses. Most of the tree operations like searching, inserting, deleting require O(h) disk accesses where h is the height of the tree. B-tree is a wide rather than a tall tree. The height of B-Trees is kept low by putting maximum possible keys in a B-Tree node. Since the height of the B-tree is low so efficiency of the operations are significantly higher compared to other balanced BST like AVL Tree, Red-Black Tree, ..etc.
 
-### Sequence set
-
 ### Header files used in the program
-include<graphics.h> - provides access to a simple graphics library that makes it possible to draw lines, polygons, images, and strings on a graphical window.
-include <fstream.h> - input/output stream class to operate on files.
-include <conio.h> - declares several useful library functions for performing "console input and output" from a program.
-include<iostream.h> - defines the standard input/output stream objects
-include <string.h> - set of functions implementing operations on strings in its standard library.
-include <stdlib.h> - defines four variable types, several macros, and various functions for performing general functions.
-include<dos.h> - contains functions for handling interrupts, producing sound, date and time functions etc.
-include<ctype.h> - several functions that are useful for testing and mapping characters. 
-
-### Modules of the program
-diagram of all modules
-what each module do
+```include<graphics.h>``` - provides access to a simple graphics library that makes it possible to draw lines, polygons, images, and strings on a graphical window.</br>
+```include <fstream.h>``` - input/output stream class to operate on files.</br>
+```include <conio.h>``` - declares several useful library functions for performing "console input and output" from a program.</br>
+```include<iostream.h>``` - defines the standard input/output stream objects</br>
+```include <string.h>``` - set of functions implementing operations on strings in its standard library.</br>
+```include <stdlib.h>``` - defines four variable types, several macros, and various functions for performing general functions.</br>
+```include<dos.h>``` - contains functions for handling interrupts, producing sound, date and time functions etc.</br>
+```include<ctype.h>``` - several functions that are useful for testing and mapping characters. </br>
 
 ### Flow of Control
-diagram
+![flow of control](https://github.com/catherinewinslet/Student-course-library-using-Btree-File-structure/blob/master/images/Group%2015.png)
 
 ### Screenshots of output
 ![menu](https://github.com/catherinewinslet/Student-course-library-using-Btree-File-structure/blob/master/images/1menu.PNG)

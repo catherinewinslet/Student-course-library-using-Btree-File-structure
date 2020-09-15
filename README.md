@@ -5,10 +5,10 @@
 ### A little information about File Structures
 A **file** is a named collection of related information that is recorded on secondary storage such as magnetic disks, magnetic tapes and optical disks. **File Structure** is a way of organizing files in such a way that inserting and retrieving of record is done efficiently.
 
-#### accessing records from file
+#### Accessing records from file
 There are different mechanisms for accessing records from files. **Indexed-sequential access** is a mechanism where an *index* is created for each file which contains pointers to various blocks. The *index* is searched sequentially and its pointer is used to access the file directly.
 
-#### storing records into file
+#### Storing records into file
 Among the different techniques of storing the records into the files, **variable-length records with delimiters** are most efficiently when used along with index-based accessing. The record-delimiter used to seperate records is hash symbol(#) and the seperator for fields in each record is pipeline symbol(|).
 
 ### Different File Structures
@@ -24,6 +24,15 @@ Among the different techniques of storing the records into the files, **variable
 ### Sequence set
 
 ### Header files used in the program
+#### include<graphics.h>
+#### include <fstream.h>
+#### include <conio.h>
+#### include<iostream.h>
+#### include <string.h>
+#### include <stdlib.h>
+#### include<dos.h>
+#### include<stdio.h>
+#### include<ctype.h>
 
 ### Modules of the program
 diagram of all modules
@@ -33,6 +42,18 @@ what each module do
 diagram
 
 ### Screenshots of output
+![menu](https://github.com/catherinewinslet/Student-course-library-using-Btree-File-structure/blob/master/images/1menu.PNG)
+![add1](https://github.com/catherinewinslet/Student-course-library-using-Btree-File-structure/blob/master/images/Picture1.png)
+![add2](https://github.com/catherinewinslet/Student-course-library-using-Btree-File-structure/blob/master/images/Picture2.png)
+![display](https://github.com/catherinewinslet/Student-course-library-using-Btree-File-structure/blob/master/images/Picture3.png)
+![search](https://github.com/catherinewinslet/Student-course-library-using-Btree-File-structure/blob/master/images/Picture4.png)
+![delete](https://github.com/catherinewinslet/Student-course-library-using-Btree-File-structure/blob/master/images/Picture5.png)
+![edit1](https://github.com/catherinewinslet/Student-course-library-using-Btree-File-structure/blob/master/images/Picture6.png)
+![edit2](https://github.com/catherinewinslet/Student-course-library-using-Btree-File-structure/blob/master/images/Picture7.png)
+
+### File Content
+![FileContent](https://github.com/catherinewinslet/Student-course-library-using-Btree-File-structure/blob/master/images/fileContent.PNG)
+![Index](https://github.com/catherinewinslet/Student-course-library-using-Btree-File-structure/blob/master/images/Index.PNG)
 
 #### References
 * [Operating System - File System - TutorialsPoint](https://www.tutorialspoint.com/operating_system/os_file_system.htm)
